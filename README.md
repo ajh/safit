@@ -48,6 +48,5 @@ in yaml format. Here's an example
 
 # TODO
 
-* Get remote growling working, with configs
 * Look into rvm wrappers
 * Look into using os x notification center directly

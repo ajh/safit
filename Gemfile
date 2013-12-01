@@ -1,6 +1,4 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'configliere'
-gem 'ruby_gntp'
-gem 'thor'
+# Specify your gem's dependencies in safit.gemspec
+gemspec

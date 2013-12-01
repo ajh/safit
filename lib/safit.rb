@@ -1,11 +1,4 @@
-require 'ruby_gntp'
+require_relative 'safit/cli'
+require_relative 'safit/gntp'
+require_relative 'safit/settings'
 
-class Safit < Thor
-  desc "alert", "send alert to growl"
-  def alert(message)
-    GNTP.notify \
-      :app_name => "GrowlAlert",
-      :title    => "Alert",
-      :text     => message
-  end
-end

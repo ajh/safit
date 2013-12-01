@@ -6,4 +6,4 @@ require "thor"
 
 require_relative "../lib/safit"
 
-Safit.start ARGV
+Safit::Cli.start ARGV

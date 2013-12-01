@@ -31,3 +31,9 @@ this will send "done" to growl when long_running_job.sh is done.
 
 this will send a notification when the `/bin/sleep` command is
 finished.
+
+# TODO
+
+* Get remote growling working, with configs
+* Look into rvm wrappers
+* Look into using os x notification center directly

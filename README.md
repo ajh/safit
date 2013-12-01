@@ -32,6 +32,20 @@ this will send "done" to growl when long_running_job.sh is done.
 this will send a notification when the `/bin/sleep` command is
 finished.
 
+# Config
+
+Growl should work without any configuration if running on the mac with
+growl installed.
+
+For sending growl notifications to a mac from a remote host, some
+configuration is required. This can be done with a `~/.safitrc` file which is
+in yaml format. Here's an example
+
+    # in ~/.safitrc
+    gntp:
+      host: 'your_host_name'
+      passwd: 'your_growl_password'
+
 # TODO
 
 * Get remote growling working, with configs

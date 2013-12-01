@@ -11,6 +11,23 @@ safit is short for (S)tick (a) (f)ork (i)n i(t).
 safit is a command line utility to send notifications. It can be used to
 notify when a long running command is finished for example.
 
+# Installation
+
+I'd be nice if this could be distributed as a stand alone binary or
+something. But since it's not...
+
+   $ gem install safit
+
+Then run like:
+
+   $ safit notify "does this work?"
+
+If using rvm, this is a nice way to make the executable available
+globally (with rvm version 1.20.7):
+
+  $ rvm wrapper
+  $ rvm wrapper ruby-1.9.3@whatever --no-prefix safit
+   
 # Usage
 
 There are two ways to use this.
@@ -19,11 +36,11 @@ There are two ways to use this.
 
   $ safit notify MESSAGE
 
-this will send MESSAGE to growl.
+This will send MESSAGE to growl.
 
   $ long_running_job.sh; safit notify done
 
-this will send "done" to growl when long_running_job.sh is done.
+This will send "done" to growl when long_running_job.sh is done.
 
 ## exec
 
@@ -48,5 +65,4 @@ in yaml format. Here's an example
 
 # TODO
 
-* Look into rvm wrappers
 * Look into using os x notification center directly

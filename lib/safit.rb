@@ -16,6 +16,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #}}}
 
+require "rubygems"
+
 require_relative 'safit/cli'
 require_relative 'safit/gntp'
 require_relative 'safit/settings'

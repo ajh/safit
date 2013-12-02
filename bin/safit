@@ -18,11 +18,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #}}}
 
-require "rubygems"
-require 'bundler/setup'
-
-require "thor"
-
 require_relative "../lib/safit"
 
 Safit::Cli.start ARGV

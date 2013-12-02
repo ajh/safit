@@ -16,6 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #}}}
 
+require 'thor'
 require_relative 'gntp'
 
 module Safit

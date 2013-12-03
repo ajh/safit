@@ -6,10 +6,11 @@
     |____/ \__|_|\___|_|\_\  \__,_| |_|  \___/|_|  |_|\_\ |_|_| |_| |_|\__|
 
 
-safit is short for (S)tick (a) (f)ork (i)n i(t).
-
 safit is a command line utility to send notifications. It can be used to
-notify when a long running command is finished for example.
+notify when a long running command is finished for example. Because when
+your command is fully baked, its time to stick a fork in it.
+
+safit is roughly short for (S)tick (a) (f)ork (i)n i(t).
 
 # Installation
 

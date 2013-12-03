@@ -21,12 +21,12 @@ require_relative 'gntp'
 
 module Safit
   class Cli < Thor
-    desc "notify", "send notification to growl"
+    desc "notify MESSAGE", "send given message to growl"
     def notify(message)
       Safit::Gntp.notify message
     end
 
-    desc "exec", "run command send alert"
+    desc "exec COMMAND", "run command and send alert when it finishes"
     def exec(*command)
       cmd = command.join(' ')
 
@@ -38,6 +38,12 @@ module Safit
       Safit::Gntp.notify $?.success? ? "DONE: #{cmd}" : "FAIL: #{cmd}"
       exit $?.exitstatus
     end
+
+    desc "done", "send a notification saying 'done'"
+    def done
+      Safit::Gntp.notify 'done'
+    end
+    default_task :done
   end
 end
 

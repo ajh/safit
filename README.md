@@ -12,6 +12,11 @@ your command is fully baked, its time to stick a fork in it.
 
 safit is roughly short for (S)tick (a) (f)ork (i)n i(t).
 
+# Prerequisites
+
+* ruby version >= 1.9
+* growl version >= 1.3
+
 # Installation
 
 I'd be nice if this could be distributed as a stand alone binary or
@@ -49,7 +54,7 @@ This will send MESSAGE to growl. A good use is for something like this:
 
   $ long_running_job.sh; safit notify "long running job is done"
 
-This will send the message to growl when long_running_job.sh is done.
+This will send the message to growl when long\_running\_job.sh is done.
 
 ## Exec
 

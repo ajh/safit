@@ -33,7 +33,6 @@ This should send growl a message saying "done".
 If using rvm, this is a nice way to make the executable available
 globally (with rvm version 1.20.7):
 
-    $ rvm wrapper
     $ rvm wrapper ruby-1.9.3@whatever --no-prefix safit
 
 # Usage

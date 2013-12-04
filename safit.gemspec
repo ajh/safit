@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "safit"
   spec.version       = Safit::VERSION
   spec.authors       = ["Andrew Hartford"]
-  spec.email         = ["hartorda@gmail.com"]
+  spec.email         = ["hartforda@gmail.com"]
   spec.description   = %q{A command line notification utility}
   spec.summary       = %q{A command line notification utility}
   spec.homepage      = "https://github.com/ajh/safit"

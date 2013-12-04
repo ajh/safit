@@ -17,17 +17,17 @@ safit is roughly short for (S)tick (a) (f)ork (i)n i(t).
 I'd be nice if this could be distributed as a stand alone binary or
 something. But since it's not...
 
-   $ gem install safit
+    $ gem install safit
 
 Then run like:
 
-   $ safit notify "does this work?"
+    $ safit notify "does this work?"
 
 If using rvm, this is a nice way to make the executable available
 globally (with rvm version 1.20.7):
 
-  $ rvm wrapper
-  $ rvm wrapper ruby-1.9.3@whatever --no-prefix safit
+    $ rvm wrapper
+    $ rvm wrapper ruby-1.9.3@whatever --no-prefix safit
    
 # Usage
 
@@ -35,19 +35,19 @@ There are two ways to use this.
 
 ## notify
 
-  $ safit notify MESSAGE
+    $ safit notify MESSAGE
 
 This will send MESSAGE to growl.
 
-  $ long_running_job.sh; safit notify done
+    $ long_running_job.sh; safit notify done
 
 This will send "done" to growl when long_running_job.sh is done.
 
 ## exec
 
-  $ safit exec sleep 5
+    $ safit exec sleep 5
 
-this will send a notification when the `/bin/sleep` command is
+This will send a notification when the `/bin/sleep` command is
 finished.
 
 # Config
@@ -57,7 +57,7 @@ growl installed.
 
 For sending growl notifications to a mac from a remote host, some
 configuration is required. This can be done with a `~/.safitrc` file which is
-in yaml format. Here's an example
+in yaml format. Here's an example of growl notification transport protocol settings.
 
     # in ~/.safitrc
     gntp:

@@ -64,6 +64,8 @@ in yaml format. Here's an example
       host: 'your_host_name'
       passwd: 'your_growl_password'
 
+See [[Growl and safit HOWTO|https://github.com/ajh/safit/wiki/Growl-and-safit-HOWTO]] for more info and tips.
+
 # TODO
 
 * Look into using os x notification center directly

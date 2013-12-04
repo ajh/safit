@@ -21,34 +21,46 @@ something. But since it's not...
 
 Then run like:
 
-   $ safit notify "does this work?"
+   $ safit
+
+This should send growl a message saying "done".
 
 If using rvm, this is a nice way to make the executable available
 globally (with rvm version 1.20.7):
 
   $ rvm wrapper
   $ rvm wrapper ruby-1.9.3@whatever --no-prefix safit
-   
+
 # Usage
 
-There are two ways to use this.
+There are three ways to use this.
 
-## notify
+## With default message
+
+  # safit
+
+This will send the message "done" to growl.
+
+## With custom message
 
   $ safit notify MESSAGE
 
-This will send MESSAGE to growl.
+This will send MESSAGE to growl. A good use is for something like this:
 
-  $ long_running_job.sh; safit notify done
+  $ long_running_job.sh; safit notify "long running job is done"
 
-This will send "done" to growl when long_running_job.sh is done.
+This will send the message to growl when long_running_job.sh is done.
 
-## exec
+## Exec
 
   $ safit exec sleep 5
 
-this will send a notification when the `/bin/sleep` command is
+This will send a notification when the `/bin/sleep` command is
 finished.
+
+*A caveat* If using the rvm wrapper, a command that also uses rvm
+probably won't work because it'll be run under a modified rvm
+environment.
 
 # Config
 
@@ -65,7 +77,3 @@ in yaml format. Here's an example
       passwd: 'your_growl_password'
 
 See [Growl and safit HOWTO](https://github.com/ajh/safit/wiki/Growl-and-safit-HOWTO) for more info and tips.
-
-# TODO
-
-* Look into using os x notification center directly
